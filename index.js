@@ -63,7 +63,7 @@ function seedCatCollection() {
     awad.save();
 }
 
-// seedCatCollection();
+seedCatCollection();
 
 // Introduce mongo compass
 
