@@ -11,7 +11,7 @@ app.use(cors());
 const PORT = process.env.PORT;
 
 // connect express server to mongodb server
-mongoose.connect('mongodb+srv://Razan:12345@cluster0.l8o91.mongodb.net/cats2?retryWrites=true&w=majority',
+mongoose.connect(`${process.env.MONGODB_URL}`,
     { useNewUrlParser: true, useUnifiedTopology: true }); //deprecation warnings
 
 
